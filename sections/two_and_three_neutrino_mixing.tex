@@ -1,0 +1,106 @@
+\subsection{Two state atmospheric neutrino mixing}
+In 1998 the Super-Kamiokande experiment measured the number of electron and muon neutrinos that arrive at the Earth’s surface as a result of cosmic ray interactions in the upper atmosphere, which are referred to as ``atmospheric neutrinos". While the number and and angular distribution of electron neutrinos is as expected, it showed that the number of muon neutrinos is significantly smaller than expected gave compelling evidence that muon neutrinos undergo flavour oscillations and this in turn implies that at least one neutrino flavour has a non-zero mass. The standard interpretation is that muon neutrinos are oscillating into tau neutrinos.\cite{King_2004}
+
+The current neutrino oscillation data are well described by simple two-state mixing
+\begin{equation}
+    \begin{pmatrix}\nu _\mu \\ \nu _\tau\end{pmatrix} = \begin{pmatrix}
+        \cos \theta_{23} & \sin \theta_{23}\\
+        -\sin \theta_{23} & \cos \theta_{23}
+    \end{pmatrix}  \begin{pmatrix}
+        \nu _2 \\ \nu _3
+    \end{pmatrix}
+\end{equation}
+Using the Effective Hamiltonian from Eq~\ref{eq:energy_high_energy_approx}. Since interference can take place only between neutrinos with the same \(E \approx p\), we shall consider all neutrino fluxes as mixtures of coherent beams. For each coherent beam, the time evolution \(\exp (-iHt)\) contains a common phase \(\exp (-ipt)\), which is irrelevant for oscillations. We shall therefore take the effective neutrino Hamiltonian to be\cite{Dighe}
+\begin{equation}
+    H_i = \frac{m_i^2}{2E}
+\end{equation}
+and if neutrinos are produced as a flavour eigenstate \(\nu_\mu\), their time evolution will be:
+\begin{equation}
+    \begin{gathered}
+    \ket{\nu _\mu} = \cos \theta_{23}\ket{\nu _2} + \sin \theta_{23}\ket{\nu _3}\\
+     = \cos \theta_{23}e^{- \frac{im_2 ^2 t}{2E}}\ket{\nu _2(0)} + \sin \theta_{23}e^{- \frac{im_3 ^2 t}{2E}}\ket{\nu _3(0)}
+    \end{gathered}
+\end{equation}
+the probability of observing the same flavour eigenstate \(\nu_\mu\) at time \(t\) is 
+\begin{equation}
+    P_{\mu\mu} = \abs{\braket{\nu_\mu}{\nu_\mu (t)}}^2 = 1 - \sin^2 2\theta_{23}\sin ^2 \left(\frac{\Delta m_{32}^2 L}{4E}\right)
+\end{equation}
+where \(\Delta m_{32}^2 = m_3 ^2 - m_{2} ^2\). Observe \(P_{\mu\mu} = 1\) at \(t = 0\) and it oscillates  with a depth of \(\sin ^2 2\theta_{23}\) and an oscillation wavelength of \((4\pi E/\Delta m_{32}^2)\).
+Hence ``conversion probability" into the other flavour eigenstate \(\nu _\tau\) is 
+\begin{equation}
+    P_{\mu\tau} = \sin ^2 2 \theta_{23} \sin ^2 \left(\frac{\Delta m_{32}^2 L}{4E}\right)
+\end{equation}
+The above equation is in `natural" units, where  \(\hbar = c = 1\). If \(\Delta m^2 _{32}\) is in \(\mathrm{eV^2}\), \(L\) in km and \(E\) in GeV, it may be written as
+\begin{equation}
+    P_{\mu\tau} = \sin ^2 2 \theta_{23} \sin ^2 \left(1.27\frac{\Delta m_{32}^2 L}{4E}\right)
+\end{equation}
+
+The atmospheric data is statistically dominated by the Super-Kamiokande results and the latest reported data sample leads to (Ref~\onlinecite{King_2004}):
+\begin{equation}
+    \begin{gathered}
+        \sin^2 2 \theta _{23} > 0.92 \\
+    1.3e-3 ~\mathrm{eV}^2 < \abs{m_{32}^2} < 3e-3 ~\mathrm{eV}^2
+    \end{gathered}
+\end{equation}
+
+\subsection{Three family solar neutrino mixing}
+Super-Kamiokande is also sensitive to the electron neutrinos arriving from the Sun, the ``solar neutrinos", and has independently confirmed the reported deficit of such solar neutrinos long reported by other experiments.
+Since \(\nu _e\) do not participate in the atmospheric neutrino oscillations, whereas they do participate in the solar neutrino oscillations, it is clear that in order to have a consistent picture of neutrino mixings, we have to develop a framework for the mixing of all three neutrino species, \(\nu _e, \nu _\mu, \nu _\tau \). 
+
+We neglect CP violation for the moment. In the absence of CP violation, the \(3\times 3\) mixing matrix is real and is completely described in terms of the three mixing angles, \(\theta _{12}, \theta _{13},\theta _{23}\). It can be explicitly written as (\textit{called Pontecorvo–Maki–Nakagawa–Sakata matrix})
+%\begin{widetext}
+%    \begin{equation}
+%    \begin{gathered}
+ %   U_{PMNS} ={\begin{pmatrix}1&0&0\\0&c_{23}&s_{23}\\0&-s_{23}&c_{23}\end{pmatrix}}{\begin{pmatrix}c_{13}&0&s_{13}e^{-i\delta _{\mathrm {CP} }}\\0&1&0\\ s_{13}e^{i\delta _{\mathrm {CP} }}&0&c_{13}\end{pmatrix}}{\begin{pmatrix}c_{12}&s_{12}&0\\-s_{12}&c_{12}&0\\0&0&1\end{pmatrix}}\\
+ %   ={\begin{pmatrix}c_{12}c_{13}&s_{12}c_{13}&s_{13}e^{-i\delta _{\mathrm {CP} }}\\-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta _{\mathrm {CP} }}&c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta _{\mathrm {CP} }}&s_{23}c_{13}\\s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta _{\mathrm {CP} }}&-c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta _{\mathrm {CP} }}&c_{23}c_{13}\end{pmatrix}}
+ %  \end{gathered}
+ %   \end{equation}
+%\end{widetext}
+
+
+\begin{equation}
+\label{eq:upmns}
+    \resizebox{0.45\textwidth}{!}{$\begin{gathered}
+    U_{PMNS} =  R_{23}R_{13}R_{12} \\
+    = {\begin{pmatrix}1&0&0\\0&c_{23}&s_{23}\\0&-s_{23}&c_{23}\end{pmatrix}}{\begin{pmatrix}c_{13}&0&s_{13}e^{-i\delta _{\mathrm {CP} }}\\0&1&0\\ s_{13}e^{i\delta _{\mathrm {CP} }}&0&c_{13}\end{pmatrix}}{\begin{pmatrix}c_{12}&s_{12}&0\\-s_{12}&c_{12}&0\\0&0&1\end{pmatrix}}
+    \end{gathered}$}
+\end{equation}
+The probability that a neutrino flavour eigenstate \(\ket{\nu_\alpha}\) will be converted to another flavour eigenstate \(\ket{\nu _\beta}\) can be calculated as we had seen in the case of two neutrino mixing. In the absence of any matter effect, the probability is given by
+\begin{equation}
+    \resizebox{0.45\textwidth}{!}{$\begin{gathered}
+        P_{\alpha \to \beta} = \delta_{\alpha\beta} - 4 \sum_{i > j} \mathrm{Re}\left(U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j}\right) \sin ^2 \left(\frac{\Delta m^2 _{ij} L}{4E} \right)\\
+        + 4 \sum_{i > j} \mathrm{Im}\left(U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j}\right) \sin \left(\frac{\Delta m^2 _{ij} L}{4E} \right) \cos \left(\frac{\Delta m^2 _{ij} L}{4E} \right)
+    \end{gathered}$}
+\end{equation}
+With no CP violation, the last term vanishes\cite{Dighe}. The general formulae in the three-flavour scenario are quite complex; therefore, the following assumption is made: in most cases only one mass scale is relevant, i.e., \(\Delta m^2 _{atm} \sim 10^{-3}~\mathrm{eV}^2\). Furthermore, one possible neutrino mass spectrum such as the hierarchical one is taken\cite{zuber2020neutrino}
+\begin{equation}
+    \Delta m^2 _{21} = \Delta m^2 _{sol} \ll \Delta m^2 _{31} \approx \Delta m^2 _{32} = \Delta m^2 _{atm}
+\end{equation}
+Then the expressions for specific oscillation transitions are:
+\begin{equation}
+    \begin{gathered}
+        P(\nu _\mu \to \nu _\tau) = 4\left|U_{33}\right|^2\left|U_{23}\right|^2\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)\\
+        = \sin ^2 (2 \theta _{23})\cos ^2 (\theta _{13})\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)
+    \end{gathered}
+\end{equation}
+\begin{equation}
+    \begin{gathered}
+        P(\nu _e \to \nu _\mu) = 4\left|U_{13}\right|^2\left|U_{23}\right|^2\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)\\
+        = \sin ^2 (2 \theta _{13})\sin ^2 (\theta _{23})\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)
+    \end{gathered}
+\end{equation}
+\begin{equation}
+    \begin{gathered}
+        P(\nu _e \to \nu _\tau) = 4\left|U_{33}\right|^2\left|U_{13}\right|^2\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)\\
+        = \sin ^2 (2 \theta _{13})\cos^2 (\theta _{23})\sin ^2\left(\frac{\Delta m^2 _{atm} L}{4E} \right)
+    \end{gathered}
+\end{equation}
+
+As a side comment, the derivation of the oscillation probability depends on two assumptions: \textit{that
+the neutrino flavour and mass states are mixed and that we create a coherent superposition of mass
+states at the weak vertex. This coherent superposition reflects the fact that we can’t experimentally
+resolve which mass state was created at the vertex. One might ask oneself what we would expect
+to see if we did know which mass state was created at the vertex. If we knew that, we would know
+the mass of the neutrino state that propagates to the detector. There would be no superposition, no
+phase difference and no flavour oscillation. However there would be flavour change.}
+

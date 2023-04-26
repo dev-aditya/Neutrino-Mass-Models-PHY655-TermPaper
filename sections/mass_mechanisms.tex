@@ -1,0 +1,120 @@
+\section{\label{sec:mass_mechanism}Neutrino mass mechanisms}
+An enormous amount of literature exists regarding models of neutrino mass generation from grand unified theories, or by adding new particles that interact with neutrinos giving them masses. In the context of this term paper, we will describe some of these different mechanisms that could generate neutrino masses. These include the seesaw mechanism and radiative corrections. There are several different kinds of see-saw mechanism in the literature. In this review we shall focus on the simplest Type I see-saw mechanism, which we shall introduce below. We shall also briefly discuss the type II see-saw mechanism and mention the radiative corrections. For more detail on other neutrino mass models reader may refer to [\onlinecite{Dighe, King_2004, ma_arxiv}]
+\subsection{\label{subsec:seesaw_mechanism}Seesaw Mechanism}
+
+We've seen that if only the left-handed chiral field, \(\nu _L\) , exists then there can be no Dirac-type mass term. In this case the neutrino Lagrangian can contain the Majorana mass term
+\begin{equation}
+    \mathcal{L}^L _{Maj} = - \frac{1}{2}m_L \overline{\nu _L ^C} \nu _L + h.c.
+\end{equation}
+and the neutrino is a Majorana particle. Unfortunately, given the build-up we've been setting up, such a term cannot actually exist in the standard model, and so \(m_L = 0\). The reason comes from the Higgs mechanism. Recalling the discussion of the Dirac mass term for the electron above, we can write down a table of charges for the left-handed Majorana mass term:
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}\hline
+    & $\nu_L$ & $\nu_L ^C$ & $\overline{\nu_L ^C}$ & $\overline{\nu_L ^C}{\nu}_L$\\\hline
+    $Q$ & $0$ & $0$ & $0$ & $0$\\
+    $T_3$ & $+1/2$ & $-1/2$ & $+1/2$ & $1$  \\\hline
+    \end{tabular}
+    \caption{Charges of fields in the left-handed Majorana mass term}
+    \label{tab:majorana_charges_sm}
+\end{table}
+Clearly, whilst we've solved the probably of introducing a right-handed neutrino field into the Standard Model, it is still composed of a left-handed field and therefore still carries the quantum numbers of the left-handed field, including non-zero weak isospin. In order to make the left-handed Majorana mass term gauge invariant you therefore need to introduce a field with $Q = 0$ and $T_3 = -1$. This field cannot be part of a Higgs doublet - rather it is part of a Higgs triplet - a set of three fields distinguished by values of $T_3 = -1, 0 ~\text{and}~ 1$. The Standard Model does not include Higgs triplets -and the data does not seem to show any evidence of one. Amongst other things, such a model would allow lepton flavour violating interactions like \(\mu \to e\gamma\) which have never been observed. A left-handed mass term like \(\overline{\nu _L ^C} \nu _L\) doesn’t seem to be possible in the current Standard Model.
+
+Hence, whatever one does, that the neutrino has a mass must imply either (i) there is something really odd we haven’t thought of (never discount this possibility) or (ii) a right-handed chiral neutrino field exists that only interacts with gravity and the Higgs mechanism.
+
+We’ll set $m_L$ equal to zero below, but let’s first assume that we can write a left-handed Majorana mass term \(\mathcal{L}^M _L = 1/2 m_L \overline{\nu_\mathcal{L}^c}\nu_L + h.c\). If we’re resigned to have a right-handed neutrino field as well, which we’ll call $N_R$ , we can write a Dirac mass term $\mathcal{L}_D = N_R \nu _L + h.c$. and a further right-handed Majorana field \(\mathcal{L}_R ^M = 1/2 m_R \overline{N_R ^C}N_R +h.c\). We also have the charge-conjugate fields, $\nu_L$ and $N_R$ . These can form another Dirac mass term, $m_D \overline{\nu _L ^C} N_R^C$. The mass for this term must be the same as for the other Dirac mass term, as the total Majorana fields are \(\nu _L ^C\) and \(N_R^C\) , and \(N_R^C +N_R\).
+
+\paragraph*{Combining Majorana and Dirac Mass:} In general, both the Dirac and Majorana mass terms may be present in the Lagrangian of a theory. Of course, this \textit{implies that the theory has right handed neutrinos}, and also incorporates \textit{lepton number violation}. We shall see one example, which can give us some insight into the mechanism of neutrino mass generation.. If one includes all these terms, then the most general mass term one can write down is
+\begin{equation}
+    \begin{aligned}
+        2 \mathcal{L}_{mass} = m_D \overline{N_R}\nu _L + m_D \overline{\nu _L ^C} N_R^C + m_L \overline{\nu_L^C}\nu_L \\
+        + m_R \overline{N_R ^C}N_R + h.c.
+    \end{aligned}
+\end{equation}
+which when written as matric equation 
+\begin{equation}
+    L_{mass} \sim \begin{pmatrix}\overline{\nu_L^C} & \overline{N_R}\end{pmatrix} \begin{pmatrix}
+        m_L & m_D\\
+        m_D & m_R
+    \end{pmatrix}\begin{pmatrix}
+        \nu_L\\N_R ^C
+    \end{pmatrix} + h.c.
+\end{equation}
+the first row vector \(\begin{pmatrix}\overline{\nu_L^C} & \overline{N_R}\end{pmatrix}\) has right-handed fields, the mass matrix is 
+\begin{equation}
+\label{eq:mass_matrix}
+    \mathcal{M}  = \begin{pmatrix}
+        m_L & m_D\\
+        m_D & m_R
+    \end{pmatrix}
+\end{equation}
+We have expressed the mass Lagrangian in terms of the chiral fields : \(\nu _L\) and \(N_R\) . These fields clearly do not have a definite mass because of the existence of the off-diagonal term, \(m_D\) , in the mass matrix. That means that these fields are not the mass eigenstates, and do not correspond to the physical particle - which must have a definite mass. The values of $m_D$ and $m_L$ are just numbers which indicate how strong the fields in each term couple to each other - they
+don’t represent physical masses. This should be no concern - it just means that the flavour eigenstate which couples to the $W$ and $Z$ bosons is a superposition of the massive neutrino states.
+
+In order to find the mass of these states, we need to rewrite the lagrangian in terms of mass eigen states \(\nu _1, \nu_2\). The eigen values of the mass matrix (Eq~\ref{eq:mass_matrix}) above gives the mass of the neutrinos. This matrix has eigenvalues of
+\begin{equation}
+    \begin{gathered}
+        m_1 = \frac{1}{2}\sqrt{4m_D^2 + (m_R - m_L)^2} - \frac{m_R+m_L}{2}\\
+        m_2 = \frac{1}{2}\sqrt{4m_D^2 + (m_R - m_L)^2} + \frac{m_R+m_L}{2}
+    \end{gathered}
+\end{equation}
+We can choose different values for $m_L$ ,$m_R$ and $m_D$ and this will give us different physical masses. But a few extreme cases are interesting. 
+
+If one chooses $m_R \gg m_D, m_L$, also called the ``\emph{seesaw}" scenario. \textbf{The special case when \(m_L = 0\) is the ``\textsc{Type}   \texttt{I}" seesaw}, it was was introduced in 1980 (Ref~\onlinecite{MohapatraPhysRevLett}) to provide an explanation for the smallness of neutrino masses as a direct consequence of the heaviness of right-handed neutrinos. As we have seen, the standard model explicitly forbids the left-handed Majorana term ($m_L = 0$) (Table~\ref{tab:majorana_charges_sm}) but says nothing about the right-handed Majorana term, so this choice of parameters is sensible. If we makes this choice, we get the mass of the \(\nu_1\) field to be
+\begin{equation}
+    m_1 \approx \frac{m_D ^2}{m_R}
+\end{equation}
+mass of the \(\nu_2\) field becomes 
+\begin{equation}
+    m_2 = m_R \left(1 + \frac{m_D ^2}{m_R^2}\right)\approx m_R
+\end{equation}
+Note, notice what happens if we set the mass of the unseen right-handed fields, $m_R$ , to something very big. Then, the physical neutrino with mass
+$m_2$ also acquires a very large mass, since $m_2 \approx m_R$.
+The physical mass of the other neutrino $m_1$, on the other hand, becomes very small as it is suppressed by the factor of $\frac{1}{m_R}$.
+
+If we try to find expressions for our mass eigenstates, we find that if $m_R$ is very large, \(\nu _1 \sim (\nu _L + \nu -L^C) - \frac{m_D}{m_R ^2}(N_R + N_R^C)\) and \(\nu _2 \sim (N_R + N_R^C)  + \frac{m_D}{m_R ^2}(\nu _L + \nu -L^C)\), i.e.  $\nu _1$ with small mass $m_1$ , is mostly our familiar left-handed light Majorana neutrino and \(\nu _2\) with very heavy mass $m_2$ is mostly the heavy sterile right-handed partner.
+
+This is the famous see-saw mechanism. It provides an explanation for the question of why the neutrino has a mass so much smaller than the other charged leptons. The charged leptons are Dirac particles and therefore have a Dirac mass on the order of $1~\mathrm{MeV}$ (or so). Suppose the Dirac mass of the neutrino is around the same value ($m_D\approx 1~\mathrm{MeV}$) like all the other particles. Then if the mass of the heavy partner is around $10^{15}~\mathrm{eV}$, the mass of the light neutrino will be in the $~\mathrm{meV}$ range, as we now know it is.\cite{boyd}
+
+This is the only natural explanation of the relative smallness of the neutrino mass we currently have. It requires that the neutrino be a Majorana particle, and that there exists an extremely heavy partner to the neutrino with a mass too large for us to be able to create it. This may seem a bit of a stretch, but we know that such particles would have been created very early in the universe. They no longer exist as stable particles, as they have decayed to lighter states as the universe cooled, but due to the uncertainty principle, could exist for the short time necessary to generate mass.
+
+
+\subsection{Type II Seesaw Mechanism}
+What if the neutrino mass originated from another VEV (vacumm expectation value), not the one from the Higgs but one coming from another scalar? The seesaw model type II, introduced in 1981\cite{type3seesaw}, is a tentative to build an answer to that question. Indeed, instead
+of extending the fermion content, we can extend the SM with a new heavy scalar which will couple to the neutrino, providing it with a mass
+The idea is to add to the SM Lagrangian a new scalar field \(\xi\) ,an $SU(2)_L$ triplet with hypercharge -1($\xi$ is usually referred to as a Higgs boson triplet). This scalar triplet of form: $\Xi \sim \left(\xi ^{++}, \xi ^{+} ,\xi^{0}\right)$\footnote{Charge conservation rules out the possibility for a singlet.} It can also be expressed in terms of the charge eigenstates, then composed of a doubly charged, a singly charged, and a neutral component:
+\begin{equation}
+    \bm{\Xi} = \begin{pmatrix}
+        \xi ^{++} \\ \xi ^{+} \\\xi^{0}
+    \end{pmatrix} \equiv \begin{pmatrix}
+        \frac{\xi^{1} - i \xi ^{2}}{\sqrt{2}} \\ \xi^{3} \\
+        \frac{\xi^{1} + i \xi ^{2}}{\sqrt{2}}
+    \end{pmatrix} 
+\end{equation}
+This scalar triplet can couple to fermions, and the yukawa interactions with leptons can be written as:
+\begin{equation}
+    \mathcal{L}_{\Xi, Yuk} = - \frac{Y_{\Xi}}{\sqrt{2}} \overline{l^c _L}^f (\bm{\sigma}
+    \cdot\bm{\Xi}) l_L ^g + h.c.
+\end{equation}
+Regarding the scalar potential, the most general potential is\cite{bouchandthesis}:
+\begin{equation}
+   \begin{gathered}
+       V = m^2 \bm{\Phi}^\dagger \bm{\Phi} + M^2 \Xi^\dagger \Xi + \frac{\lambda_1}{2}(\Xi^\dagger \Xi)^2 + \lambda _3 (\bm{\Phi}^\dagger \bm{\Phi})(\Xi^\dagger \Xi) \\+ \mu \left(
+        \overline{\xi^{0}} \phi^0 \phi^0 + \sqrt{2}\xi^{-}\phi^{+}\phi^{0} + \xi^{--}\phi^{+}\phi^{+}\right) 
+        + h.c.
+   \end{gathered}
+\end{equation}
+Besides, similarly to the Higgs mechanism, in order to get a mass term the scalar triplet is given a VEV breaking the symmetries. The requirement for charge conservation fixes uniquely the breaking direction and therefore it is the neutral component which will acquire a VEV. \textit{The scalar triplet VEV has to be extremely small compared to the Higgs VEV, to account for the tiny mass of neutrinos}. 
+\begin{equation}
+    \langle \xi^0\rangle = u \ll v = \langle \phi^0 \rangle
+\end{equation}
+After the symmetry breaking we get a mass term for the neutrinos:
+\begin{equation}
+    \mathcal{L}_{\Xi, Yuk} =  Y_{\Xi} \overline{\nu^c _L}^f \langle \xi^0\rangle \nu_L  + h.c.
+\end{equation}
+Thus, using the expression for the VEV that can be calculated from the scalar
+potential, it yields
+\begin{equation}
+    \mathcal{M}_\nu = - uY_{\Xi} \sim +v^2 \mu \frac{Y_{\Xi}}{M^2}
+\end{equation}
+In this expression one can notice that the light neutrino mass matrix is inversely
+proportional to the mass of the scalar triplet, \textsc{consequently this model can also be seen as a `Seesaw'.}

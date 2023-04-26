@@ -1,0 +1,118 @@
+\subsection{\label{sub:sm_mass_models}The Majorana mechanism}
+We have seen that the Dirac mass mechanism requires the existance of a sterile right-handed neutrino state. In the early 1930’s, a young physicist by the name of Ettore Majorana wondered if he could dispense with this requirement and construct a mass term using only the left-handed chiral state
+Let us first split the Dirac Lagrangian up into its chiral components
+\begin{eqnarray}
+    \begin{gathered}
+         \mathcal{L} = \overline {\psi} (i \gamma _\mu \partial^\mu - m)\psi\\
+         = (\overline {\psi}_L + \overline {\psi}_R) (i \gamma _\mu \partial^\mu - m)(\psi_L + \psi_R)\\
+         = \overline {\psi}_L (i \gamma _\mu \partial^\mu - m\overline {\psi}_R)\psi_L+\overline {\psi}_R (i \gamma _\mu \partial^\mu - m\overline {\psi}_L)\psi_R
+    \end{gathered}
+\end{eqnarray}
+we have used the fact (Appendix~\ref{sec:charge_conjugation}) that \(\overline {\psi}_R \gamma ^\mu\partial _\mu {\psi}_L = \overline {\psi}_L \gamma ^\mu\partial _\mu {\psi}_R = 0\) and \(\overline {\psi}_R {\psi}_R = \overline {\psi}_L {\psi}_L = 0\)
+
+Using the Euler Lagrange equation we can look for independent equations of motion for the left-and right-handed fields, \(\psi _R\) and \(\psi_L\) . We obtain two coupled Dirac Equations
+\begin{equation}
+    \begin{gathered}
+        i \gamma ^\mu \partial_\mu \psi _L = m \psi _R\\
+        i \gamma ^\mu \partial_\mu \psi _R = m \psi _L
+    \end{gathered}
+\end{equation}
+The mass term couples the two equations. For massless fields; we have the Weyl equations
+\begin{equation}
+    \begin{gathered}
+        i \gamma ^\mu \partial_\mu \psi _L = 0\\
+        i \gamma ^\mu \partial_\mu \psi _R = 0
+    \end{gathered}
+\end{equation}
+The neutrino is now described using only two independent two-component spinors which turn out to be helicity eigenstates and describe two states with definite and opposite helicity. These correspond to the left-handed neutrino and the right-handed neutrino. Since the right-handed neutrino field does not exist, then we just describe the neutrino with a single massless left-handed field and that is that. This is the usual formulation of the Standard Model.
+
+Ettore Majorana wondered if he could describe a massive neutrino using just a single left-handed field. At first glance this is impossible as you need the right-handed field to construct a Dirac mass term. Majorana, however, found a way.
+Let’s take the second equation. We want to try to make it look like the first by finding an expression for \(\psi _R\) in terms of \(\psi_L\) . To begin with, let’s take the hermitian conjugate of the second equation
+\begin{equation}
+\label{eq:weyl_eq_massive_neutrino}
+    \begin{gathered}
+        (i \gamma ^\mu \partial_\mu \psi _R)^\dagger = (m \psi _L)^\dagger\\
+        -i \partial_\mu \psi _R ^\dagger (\gamma ^\mu) ^\dagger = m \psi _L ^\dagger
+    \end{gathered}
+\end{equation}
+Multiplying on the right by \(\gamma^0\) we get
+\begin{equation}
+    -i \partial_\mu \psi _R ^\dagger(\gamma ^\mu) ^\dagger \gamma^0 = m \psi _L ^\dagger\gamma^0
+\end{equation}
+One of the properties of the \(\gamma\) matrices is \(\gamma^0 (\gamma^\mu) ^\dagger\gamma^0 = - \gamma_\mu\) . Multiplying on the left by \(\gamma^0\) and remembering that \((\gamma^0)^2 = 1\), we have \((\gamma^\mu) ^\dagger\gamma^0 = \gamma^0\gamma^\mu\). Using this
+\begin{equation}
+    -i \partial_\mu \psi _R ^\dagger \gamma^0 \gamma^\mu = m \psi _L ^\dagger\gamma^0
+\end{equation}
+and therefore 
+\begin{equation}
+    -i \partial_\mu \overline {\psi} _R \gamma ^\mu = m \overline {\psi}_L
+\end{equation}
+
+We want this to have the same structure as the first equation (Eq~\ref{eq:weyl_eq_massive_neutrino}), but that negative sign out the front and the wrong position of the \(\gamma^\mu\) matrix is spoiling this. We can deal with this by taking the transpose
+\begin{equation}
+    \begin{gathered}
+        - i [\partial _ \mu \overline {\psi}_R \gamma^\mu]^T = m \overline {\psi}_L ^T\\
+        - i (\gamma^\mu)^T \partial _ \mu \overline {\psi}_R ^T = m \overline {\psi}_L ^T
+    \end{gathered}
+\end{equation}
+and using the property of the charge conjugation matrix that \(C (\gamma^\mu)^T = - \gamma^\mu C\) we get
+\begin{equation}
+    i\gamma^\mu \partial_\mu C \overline {\psi}_R ^T = m \overline {\psi}_L ^T
+\end{equation}
+This equation has the same structure as the first if we require that the right handed component of \(\psi\) is
+\begin{equation}
+    \psi _R = C \overline {\psi}_L ^T
+\end{equation}
+This assumption requires that \(C \overline {\psi}_L ^T\) is actually right-handed. Is this true? Well, if the field is right-handed then applying the left-handed chiral projection operator, \(P_L = \frac{1}{2} (1 - \gamma^5); P_L\psi _R = 0\). Using the properties of the charge conjugation matrix, \(P_L C = C P_L ^T\), we have
+\begin{equation}
+    P_L (C \overline {\psi}_L ^T) = C P_L ^T  \overline {\psi}_L ^T = C (\overline {\psi}_L P_L)^T
+\end{equation}
+Now
+\begin{equation}
+    \begin{aligned}
+        \overline {\psi}_L P_L = (P_L\psi)^\dagger \gamma_0 P_L\\
+        = \psi ^\dagger P_L \gamma_0 P_L
+        = \psi ^\dagger \gamma_0 P_R P_L= 0\\
+    \end{aligned}
+\end{equation}
+So, yes, if we define the right-handed field \(\psi _R = C \overline {\psi}_L ^T\), then we can write the Dirac equation only in terms of the left-handed field \(\psi _L\). The Majorana field, then becomes
+\begin{equation}
+\psi = \psi _L + \psi _R = \psi _L + C \overline {\psi}_L^T = \psi _L + \psi _L ^C
+\end{equation}
+where we've defined the \textit{charge-conjugate field}, \(\psi _L ^C = C \overline {\psi}_L^T\)
+What does this imply? Well, let's take the charge conjugate of the Majorana field:
+\begin{equation}
+    \psi ^C = (\psi _L + \psi _L ^C)^C = \psi _L ^C + \psi _L = \psi
+\end{equation}
+That is, the charge conjugate of the field is the same as the field itself, or more prosaically, a Majorana particle is it's own anti-particle.
+
+What sort of particle can be Majorana - well, clearly it must be neutral, as the charge conjugation operator flips the sign of the electric charge. Any charged fermion therefore will not be identical to its antiparticle. In fact, the only neutral fermion that could be a Majorana particle is the neutrino.
+
+This also changes our view of the nature of the neutrino. To date we have been assuming that the neutrino and the antineutrino are distinct particles, but let’s think about that. We define the neutrino to be that left-handed state which is created together with a negatively charged lepton in the decay of a \(W^-\) boson. and the antineutrino to be that right-handed state which is created together with a positively charged lepton in the decay of \(W^+\) boson. However, we never see the neutrino or antineutrino particles themselves. If the neutrino was a Majorana particle, with a left- and right - handed component then we would only have a single particle: the neutrino. When a \(W^-\) boson decayed it would naturally produce the left-handed component as that’s the only bit of the neutrino field which couples to the \(W^-\) , and vice-verse if a \(W^+\) decays. We don't need two independent particles- just one with two independent chiral components will do.
+
+\subsubsection{Majorana Mass Term}
+We saw above that the mass term in the Lagrangian couples left- and right-handed neutrino chiral states: \(\mathcal{L}^D = - m \overline {\nu}_R \nu _L\). If the particle is Majorana, We can also form a mass term just with the left-handed component. In this case, the right-handed component is \(\nu _L ^C = C \overline {\nu}_L^T\)
+\begin{equation}
+    \mathcal{L}^M _L = -\frac{1}{2} m \overline {\nu ^C _L} \nu _L
+\end{equation}
+The factor of a half there is to account for double-counting since the hermitian conjugate is identical.
+\subsubsection{Lepton Number violation} 
+The Majorana term couples the antineutrino to the neutrino component. Dirac neutrinos have lepton number $L = +1$ and antineutrinos have lepton number $L = -1$. Since Majorana neutrinos are the same as their antiparticle it is impossible to give such an object a conserved lepton number. Indeed, interactions involving Majorana neutrinos generally violate lepton number conservation by \(\Delta L = \pm 2\).
+
+\subsubsection{$^\ast$Neutrinoless double beta decay}
+
+The experiments involving neutrino oscillations cannot identify whether neutrino is a Majorana particle. However, if we observe neutrinoless double beta decay, would confirm what the Majorana nature of neutrino is the:
+\begin{equation}
+    N (A, Z) \to N '(A, Z + 2) + 2e^-
+\end{equation}
+where the nucleus $N$ with atomic mass number $A$ and atomic number $Z$ decays to the nucleus $N'$ with atomic mass number $A$ and atomic mass number $Z + 2$ without any neutrino emission (i.e. without any missing energy). Such a reaction is characterized by the two electrons emitted back to back with the same energy, the combined energy being exactly equal to the $Q$ value of the reaction.
+
+The cross section for this process is proportional to a particular combination of Majorana masses:
+\begin{equation}
+    \sigma \propto \abs{\sum U^2 _{ei} m_i}^2
+\end{equation}
+so that the number of events observed are a measure of the ``effective" Majorana mass of the electron neutrino:
+\begin{equation}
+    \langle m_{ee} \rangle = \abs{\sum U^2 _{ei} m_i}
+\end{equation}
+Till now no confirmed neutrinoless double beta decay events have been observed, which has enabled us to put an upper bound of \(\langle m_{ee} \rangle < 0.35~\mathrm{eV}\).\cite{Aalseth:2004hb}

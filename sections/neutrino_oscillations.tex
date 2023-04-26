@@ -1,0 +1,128 @@
+\section{\label{sec:neutrino_oscillations}Hints of Neutrino Mass: Neutrino flavours and Neutrino Oscillations}
+
+Like all other fundamental fermions, neutrinos come in \emph{(at least)} three different types, or flavours. A convenient way of describing neutrino production via charged-current weak interactions is to classify the different neutrino flavours according to the flavour of the charged lepton that is produced or destroyed along with the neutrino. Thus, electron-type neutrinos (\(\nu _e\)) are produced and destroyed along with electrons (\(e\)), as are muon-type neutrinos (\(\nu _\mu\)) and tau-type neutrinos (\(\nu _\tau\))  along with muons (\(\mu\)) and taus (\(\tau\)), respectively. 
+
+Since 1998, experiments with neutrinos produced in the Sun, in the atmosphere, in nuclear reactors , and in particle accelerators have demonstrated beyond a reasonable doubt that neutrinos can change flavour as they propagate. The rate of flavour change depends on the neutrino energy, the distance traveled, and the propagation environment. \emph{The only hypothesis capable of explaining all the neutrino data collected during the last few decades is that at least two of the neutrino masses are not zero and are different from one another, and that leptons mix.} In this case, neutrinos change flavour as a function of distance and energy through the phenomenon of neutrino oscillation.\cite{Gouvêa_2016} 
+
+In case of a non-zero rest mass of the neutrino, the flavour  and mass eigenstates are not necessarily identical, a fact well known in the quark sector where both type of states are connected by CKM matrix. This allows for the phenomenon of neutrino oscillations, a kind of flavour oscillations which is already known in other particle systems.  It can be described by
+pure quantum field theory. Oscillations are observable as long as the neutrino wave
+packets form a coherent superposition of states. Such oscillations among the different
+neutrino flavours do not conserve individual flavour lepton numbers, only a total
+lepton number.
+
+\subsection{General formalism of Oscillations}
+
+For more detailed version of this discussion [Ref~\onlinecite{zuber2020neutrino}]. Let us assume that there is an arbitrary number of \(n\) orthonormal eigenstates.
+The \(n\) flavour eigenstates \(\ket{\nu_\alpha}\) with   \(\bra{\nu_\beta}\ket{\nu_\alpha} = \delta _{\alpha\beta}\) are connected to the \(n\) mass eigenstates \(\ket{\nu_i}\) with \(\bra{\nu_i}\ket{\nu_j} = \delta _{ij}\) via a unitary mixing matrix \(U\):
+\begin{gather}
+    \ket{\nu _\alpha} = \sum _{i} U_{\alpha i} \ket{\nu _i} \\
+    \ket{\nu _i} = \sum _{\alpha} (U^\dagger) _{i \alpha } \ket{\nu _\alpha} = \sum _{\alpha} U^* _{i \alpha } \ket{\nu _\alpha}
+\end{gather}
+
+with 
+\begin{gather}
+    U^\dagger U = 1 \quad \sum_{i} U_{\alpha i} U^* _{\beta i} = \delta _{\alpha\beta}\quad\sum_{\alpha} U_{\alpha i} U^* _{\alpha j} = \delta _{ij}
+\end{gather}
+
+For antineutrinos we have:
+\begin{equation}
+    \ket{\overline {\nu} _\alpha} = \sum _{i} U^* _{\alpha i} \ket{\overline {\nu} _i}
+\end{equation}
+
+The mass eigenstates \(\ket{\nu _i}\) are stationary states and show a time dependence according to 
+\begin{equation}
+    \ket{\nu _i (x, t)} = e^{-i E_i t} \ket{\nu _i (x, o)}
+\end{equation}
+assuming neutrinos with momentum \(p\) emitted by a source positioned at \(x = 0,(t = 0)\)
+\begin{equation}
+    \ket{\nu _i (x, 0)} = e^{ip x} \ket{\nu _i}
+\end{equation}
+
+and for relativistic case
+\begin{eqnarray}
+\label{eq:energy_high_energy_approx}
+    E_i = \sqrt{m_i ^2 + p_i ^2 } \simeq p_i + \frac{m_i ^2}{2p_i} \simeq E + \frac{m_i ^2}{2E}
+\end{eqnarray}
+for \(p \gg m_i\) and \(E\approx p\) as neutrino energy. Assume that the difference in mass between two neutrino states with different mass \(\Delta m_{ij} ^2 = m_i ^2 - m_j ^2\) cannot be resolved. Then the flavour neutrino is a coherent superposition of neutrino states with definite mass. Neutrinos are produced and detected as flavour states. Therefore, neutrinos with flavour \(\ket{\nu_\alpha}\) emitted by a source at 
+\(t = 0\) propagate with time into a state
+\begin{eqnarray}
+    \begin{gathered}
+\label{eq:neutrino_propogation_p_E}
+    \ket{\nu (x, t)} = \sum_{i} U_{\alpha i}e^{-i E_i t}\ket{\nu _i} \\ = \sum_{i, \beta} U_{\alpha i}U^*_{\beta i} e^{ip x}e^{-i E_i t}\ket{\nu _\beta} 
+\end{gathered}
+\end{eqnarray}
+Different neutrino masses imply that the phase factor in (\ref{eq:neutrino_propogation_p_E}) is different. This means
+that the flavour content of the final state differs from the initial one. At macroscopic
+distances this effect can be large in spite of small differences in neutrino masses. The
+time-dependent transition amplitude for a flavour conversion \(\nu_\alpha \to \nu_\beta\) is then given by:
+\begin{equation}
+\label{eq:transition_amplitude_neutrino}
+       A(\alpha \to \beta)(t) = \bra{\nu_\beta}\ket{\nu (x, t)}
+       = \sum_{i} U^*_{\beta i}U _{\alpha i} e^{ip x} e^{-i E_i t}
+\end{equation}
+
+
+Using (\ref{eq:energy_high_energy_approx}) this can be written as:
+\begin{equation}
+\label{eq:transition_amplitude_antineutrino}
+    \begin{aligned}
+         A(\alpha \to \beta)(t) = \bra{\nu_\beta}\ket{\nu (x, t)} = \sum_{i} U^*_{\beta i}U_{\alpha i} e^{-i \frac{m_i ^2}{2} \frac{L}{E}}\\
+         = A(\alpha \to \beta)(L)\\
+    \end{aligned}
+\end{equation}
+with \(L = x = ct\) being the distance between source and detector. In an analogous way, the amplitude for the antineutrino transition can be derived as:
+\begin{eqnarray}
+    A(\bar{\alpha} \to \bar{\beta})(t) = \sum_{i} U_{\beta i}U^* _{\alpha i} e^{-i E_i t} 
+\end{eqnarray}
+
+Hence the transition probability \(P\) can be obtained from the transition amplitude \(A\):
+\begin{widetext}
+\begin{equation}
+\label{eq:transition_probability}
+        P(\alpha \to \beta)(t) = \left|A(\alpha \to \beta)(t)\right|^2 
+        = \sum_{i}\sum_{j}  U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j} e^{-i (E_i - E_j) t} 
+        = \left|U_{\alpha i}U^*_{\beta i}\right|^2 
+        + 2 \mathrm{Re}\sum_{j > i} U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j} e^{\left(- i \frac{\Delta m_{ij}^2}{2} \frac{L}{E}\right)}
+\end{equation}
+\end{widetext}
+%\begin{eqnarray}
+%\label{eq:transition_probability}
+ %    \begin{gathered}
+  %      P(\alpha \to \beta)(t) = \left|A(\alpha \to \beta)(t)\right|^2 \\
+  %      = \sum_{i}\sum_{j}  U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j} e^{-i (E_i - E_j) t} \\
+  %      = \left|U_{\alpha i}U^*_{\beta i}\right|^2 \\
+  %      + 2 \mathrm{Re}\sum_{j > i} U_{\alpha i}U^* _{\alpha j}U^*_{\beta i}U _{\beta j} \exp\left(- i \frac{\Delta m_{ij}^2}{2} \frac{L}{E}\right)
+  %  \end{gathered}
+%\end{eqnarray}
+The second term in (\ref{eq:transition_probability}) describes the time (or spatial) dependent neutrino oscillations. The first one is an average transition probability, which also can be written as
+\begin{eqnarray}
+    \langle{P_{\alpha \to \beta}}\rangle  = \sum_{i}\left|U_{\alpha i}U^*_{\beta i}\right|^2 \nonumber \\
+    = \sum_{i} \left|U^*_{\alpha i}U_{\beta i}\right|^2 = \langle{P_{\beta \to \alpha}}\rangle
+\end{eqnarray}
+
+
+Using \textsc{CP} invariance (i.e when \(U_{\alpha i}\) real), the above expression can be simplified to
+%\begin{eqnarray}
+ %  \begin{gathered}
+ %       P(\alpha \to \beta)(t) \\
+ %       = U^2_{\alpha i}U_{\beta i}^2 
+ %       + 2 \sum_{j > i} U_{\alpha i}U _{\alpha j}U_{\beta i}U _{\beta j} \cos{\left( \frac{\Delta m_{ij}^2}{2} \frac{L}{E}\right)}\\
+    %    = \delta _{\alpha\beta} - 4 \sum_{j > i} U_{\alpha i}U _{\alpha j}U_{\beta i}U _{\beta j} \sin{\left( \frac{\Delta m_{ij}^2}{4} \frac{L}{E}\right)}
+   %\end{gathered}
+%\end{eqnarray}
+\begin{widetext}
+    \begin{eqnarray}
+        P(\alpha \to \beta)(t) 
+        = U^2_{\alpha i}U_{\beta i}^2 
+        + 2 \sum_{j > i} U_{\alpha i}U _{\alpha j}U_{\beta i}U _{\beta j} \cos{\left( \frac{\Delta m_{ij}^2}{2} \frac{L}{E}\right)}
+        = \delta _{\alpha\beta} - 4 \sum_{j > i} U_{\alpha i}U _{\alpha j}U_{\beta i}U _{\beta j} \sin^2 {\left( \frac{\Delta m_{ij}^2}{4} \frac{L}{E}\right)}
+\end{eqnarray}
+\end{widetext}
+
+The probability of finding the original flavour is given by
+\begin{equation}
+    P(\alpha \to \alpha) = 1 - \sum _{\alpha \not = \beta} P(\alpha \to \beta)
+\end{equation}
+
+As can be seen from (\ref{eq:transition_probability}) there will be oscillatory behaviour as long as at least one neutrino mass eigenstate is different from zero and if there is a mixing (non-diagonal terms in \(U\) ) among the flavours. In addition, the observation of oscillations allows no absolute mass measurement; oscillations are sensitive to only \(\Delta m^2\). Last but not least, neutrino masses should not be exactly degenerated. Another important feature is the dependence of the oscillation probability on $L/E$.
+

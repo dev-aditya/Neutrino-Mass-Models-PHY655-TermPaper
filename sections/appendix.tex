@@ -1,0 +1,59 @@
+\section{\label{sec:charge_conjugation}Charge Conjugation}
+``Charge conjugation operator" flips the signs of all the charges (or quantum numbers). It changes a particle into an anti-particle, and vice versa. The relevant operator is:
+\begin{equation}
+    \hat{C} \ket{\Psi} = C \ket{\overline {\Psi}}
+\end{equation}
+where $C$ on the right hand side of the equation is the charge conjugation eigenvalue. One can show that the form for the charge conjugation operator, using Dirac gamma matrices, is
+\begin{equation}
+    \hat{C} = i \gamma ^2 \gamma ^0
+\end{equation}
+If \(\psi\) is the spinor field of a free neutrino, then the charge-conjugated field \(\psi^c\) can be shown to be
+\begin{equation}
+    \psi^c = C \psi ^*
+\end{equation}
+\(\psi ^*\) is charge conjugated field. \cite{boyd}
+\section{\label{sec:helicity}Helicity}
+The fact that we can find spin eigenvalues for states in which the particles are travelling along the spin-direction indicates that the quantity we need is not \textit{spin} but \textit{helicity}. The \textsc{helicity is defined as the projection of the spin along the direction of motion}:
+\begin{equation}
+    \hat{h} = \bm{\Sigma} \cdot \hat{\bm{p}}  = 2 \bm{S}\cdot\hat{\bm{p}} = \begin{pmatrix}
+        \sigma & 0\\
+        0 & \sigma
+    \end{pmatrix} \cdot \hat{\bm{p}}
+\end{equation}
+and has eigenvalues equal to +1 (called \textit{right-handed} where the spin vector is aligned in the same
+direction as the momentum vector) or -1 (called \textit{left-handed} where the spin vector is aligned in the opposite direction as the momentum vector)
+
+It can be shown that the helicity \textit{does} commute with the Hamiltonian and so one can find eigenstates that are simultaneously states of helicity and the Hamiltonian. The problem, and it is a big problem, is that helicity is not Lorentz invariant in the case of a massive particle. If the particle is massive it is possible to find an inertial reference frame in which the particle is going in the opposite direction. This does not change the direction of the spin vector, so the helicity can change sign.
+
+\textsc{The helicity is Lorentz invariant only in the case of massless particles.}
+\section{\label{sec:chirality}Chirality}
+It would be good if we can find a operator that is Lorentz invariant, rather than commuting with the Hamiltonian. In general wave functions in the Standard Model are eigenstates of a Lorentz invariant quantity called the \textit{chirality}. The chirality operator is \(\gamma ^5\) and it does not commute with the Hamiltonian. 
+In the limit that \(E \gg m\), or that the particle is massless, the chirality is identical to the helicity. For a massive particle this is no longer true.
+
+In general the eigenstates of the chirality operator are
+\begin{equation}
+    \begin{gathered}
+        \gamma ^5 u_R = + u_R, ~ \gamma ^5 u_L = - u_L\\
+        \gamma ^5 v_R = - v_R, ~ \gamma ^5 v_L = + v_L
+    \end{gathered}
+\end{equation}
+where we define \(u_R\) and \( u_R\) are right and left-handed chiral states. One can define the projection operators as 
+\begin{equation}
+    \begin{gathered}
+    P_L = \frac{1}{2} (1 - \gamma^5), \quad P_R = \frac{1}{2} (1 + \gamma^5)
+\end{gathered}
+\end{equation}
+uch that $P_L$ projects outs the left-handed chiral particle states and right-handed chiral anti-particle states. $P_R$ projects out the right-handed chiral particle states and left-handed chiral anti-particle states.
+
+Any spinor can be written in terms of it’s left- and right-handed chiral states:
+\begin{equation}
+    \psi = (P_R + P_L)\psi  = P_R \psi + P_L\psi = \psi _R + \psi _L
+\end{equation}
+using the properties of projection operators, it's easy to show that for some feild \(\psi\) and \(\psi\)
+\begin{equation}
+    \overline {\psi}_L \gamma_\mu \phi _R = \overline {\psi}_R \gamma_\mu \phi _L = 0
+\end{equation}
+So left-handed chiral particles couple only to left-handed chiral fields, and right-handed chiral fields couple to right-handed chiral fields.
+
+One must be very careful with how one interprets this statement. What it does not say is that
+there are left-handed chiral electrons and right-handed chiral electrons which are distinct particles. The ``particles" are those states which propagate with fixed mass under the Dirac equation. What this means is that the Standard Model does not mix chiralities or, to put it another way, no fundamental interaction is capable of turning a left-chiral particle into a right-chiral particle. Useful though it is when describing the interaction of fields in the Standard Model, chirality is not conserved in the propagation of a free particle. In fact the chiral states \(\phi _L\) and \(\phi_R\) do not even satisfy the Dirac equation. Since chirality is not a good quantum number it can evolve with time. A massive particle starting off as a completely left handed chiral state can evolve a right-handed chiral component. By contrast, helicity is a conserved quantity during free particle propagation. Only in the case of massless particles, for which helicity and chirality are identical and are conserved in free-particle propagation, can left- and right-handed particles be considered distinct. For neutrinos this mostly holds.

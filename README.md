@@ -1,4 +1,4 @@
-# Neutrino-Mass-Models-PHY655-TermPaper
+# [PHY655-TermPaper] Neutrino Mass Models
 
 This term paper provides a review of various neutrino mass model and their implications
 for particle physics and the Standard Model. We discuss how mass terms are incorporated
